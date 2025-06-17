@@ -1,0 +1,11 @@
+"start": "tsc && node ."
+const agp = new Wallet();
+const jz = new Wallet();
+const jb = new Wallet();
+
+agp.sendMoney(50, jz.publicKey);
+jz.sendMoney(23, jb.publicKey);
+jb.sendMoney(5, jz.publicKey);
+
+console.log(Chain.instance)
+npm run start
